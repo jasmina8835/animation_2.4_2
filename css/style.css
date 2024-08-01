@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box {
+  width: 350px;
+  height: 450px;
+  margin-top: 100px;
+  border: none;
+  border-radius: 10px;
+  background-image: url(../img/ronaldo.jpg);
+  background-repeat: no-repeat;
+  background-size: 350px 450px;
+  transition-property: all;
+  transition-duration: 2s;
+  cursor: pointer;
+}
+
+.text {
+  position: absolute;
+  top: 120px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 0.5s;
+}
+
+.text .bx {
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.text1 {
+  left: 0;
+}
+
+.text2 {
+  position: absolute;
+  left: 510px;
+}
+
+.text3 {
+  position: absolute;
+  right: 440px;
+}
+
+.box:hover  {
+  background-size: 380px 550px;
+  box-shadow: 10px 10px 15px 5px gray;
+}
+
+.box:hover .text1 {
+  left: 100px;
+}
+
+.box:hover .text2 {
+  left: 620px;
+}
+
+.box:hover .text3 {
+  right: 335px;
+}
+
